@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Grace Practice</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="supabase.config.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="songs.js"></script>
+  <script defer src="daily.js"></script>
+  <script defer src="week.js"></script>
+  <script defer src="weekly-list.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Grace Practice</h1>
+  </header>
+
+  <nav class="tabs">
+    <button data-tab="songs">연주곡목록</button>
+    <button data-tab="week" class="active">다음연습곡조회</button>
+    <button data-tab="weekly">연습곡 목록 요약화면</button>
+    <button data-tab="daily">주별 연습곡관리</button>
+  </nav>
+
+  <main>
+    <section id="tab-songs" class="tab">
+      <div class="card">
+        <h2>연습곡 목록</h2>
+        <ul id="songs-list"></ul>
+      </div>
+      <div class="card">
+        <h2>연습곡 추가</h2>
+        <input id="song-title" placeholder="제목" />
+        <input id="song-artist" placeholder="아티스트(선택)" />
+        <button id="add-song">추가</button>
+      </div>
+    </section>
+
+    <section id="tab-daily" class="tab">
+      <div class="card">
+        <h2>일자별 연습곡 관리</h2>
+        <input type="date" id="practice-date" />
+        <div class="picker-info">최대 10곡 선택</div>
+        <div id="song-picker" class="picker"></div>
+        <button id="save-daily">저장</button>
+      </div>
+    </section>
+
+    <section id="tab-week" class="tab active">
+      <div class="card">
+        <h2>다음 연습곡 조회</h2>
+        <div id="week-list"></div>
+      </div>
+    </section>
+
+    <section id="tab-weekly" class="tab">
+      <div class="card">
+        <h2>연습곡 목록 요약화면</h2>
+        <div id="weekly-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Supabase 기반 연습 관리</small>
+  </footer>
+</body>
+</html>
+
+
