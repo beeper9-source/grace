@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32">
+  <!-- 첼로 바디 -->
+  <path d="M30 20 Q50 15 70 20 L75 80 Q50 85 25 80 Z" fill="#8B4513" stroke="#654321" stroke-width="1"/>
+  
+  <!-- 첼로 목 -->
+  <rect x="48" y="5" width="4" height="25" fill="#8B4513"/>
+  
+  <!-- 첼로 머리 -->
+  <path d="M48 5 Q48 0 52 0 Q56 0 56 5 Q56 10 52 10 Q48 10 48 5" fill="#8B4513"/>
+  
+  <!-- 첼로 다리 -->
+  <rect x="45" y="80" width="10" height="15" fill="#8B4513"/>
+  
+  <!-- 현 -->
+  <line x1="50" y1="5" x2="50" y2="80" stroke="#000" stroke-width="0.5"/>
+  <line x1="52" y1="5" x2="52" y2="80" stroke="#000" stroke-width="0.5"/>
+  <line x1="48" y1="5" x2="48" y2="80" stroke="#000" stroke-width="0.5"/>
+  <line x1="46" y1="5" x2="46" y2="80" stroke="#000" stroke-width="0.5"/>
+  
+  <!-- F홀 -->
+  <path d="M35 35 Q35 30 40 30 Q45 30 45 35 Q45 40 40 40 Q35 40 35 35" fill="none" stroke="#000" stroke-width="0.5"/>
+  <path d="M55 35 Q55 30 60 30 Q65 30 65 35 Q65 40 60 40 Q55 40 55 35" fill="none" stroke="#000" stroke-width="0.5"/>
+</svg>
